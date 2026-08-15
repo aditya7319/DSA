@@ -9,7 +9,5 @@ public:
             bestBuy = min (bestBuy , prices[i]);
         }
         return maxProfit;
-    
-        
     }
 };
