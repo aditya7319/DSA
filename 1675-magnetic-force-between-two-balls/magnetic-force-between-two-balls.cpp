@@ -1,10 +1,10 @@
 class Solution {
 public:
-bool isvalid(vector<int>& position, int n, int maxpossibledistance, int m){
+bool isvalid(vector<int>& position, int n, int minpossibledistance, int m){
     int lastbucpos = position[0];
     int buc = 1;
     for(int i =0; i<n ; i++){
-        if(position[i] - lastbucpos >= maxpossibledistance){
+        if(position[i] - lastbucpos >= minpossibledistance){
             buc++;
             lastbucpos = position[i];
         }
